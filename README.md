@@ -20,7 +20,7 @@
 ![Seated wide-grip lat pulldown](lat_pulldown_xhigh_recolored.gif)
 
 ### 槓鈴背蹲
-![Barbell back squat](barbell_squat_xhigh_recolored.gif)
+![Barbell back squat](barbell_squat_xhigh_recolored_garment_v2.gif)
 
 ### 槓鈴臥推
 ![Barbell bench press](barbell_bench_press_xhigh.gif)
@@ -36,6 +36,8 @@
 ## 紅／藍版完整來源
 
 [下載七個示範的精簡重建來源](exercise_red_blue_sources.zip)：包含共用基礎人體、建模／渲染程式、肌群配色修正與 QA。解壓後先執行 rebuild_human.py；各範例命令見包內 README。
+
+[深蹲衣物修正版來源](barbell_squat_xhigh_recolored_garment_v2_source.zip)：保留動作與肌群顏色，修正短褲蒙皮。
 
 ## 快速開始
 
