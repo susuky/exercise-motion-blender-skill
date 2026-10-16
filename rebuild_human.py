@@ -198,7 +198,7 @@ for p in me.polygons:p.use_smooth=True
 for group in h.vertex_groups:shorts.vertex_groups.new(name=group.name)
 for old,new in lookup.items():
  for vg in verts[old].groups:shorts.vertex_groups[vg.group].add([new],vg.weight,'REPLACE')
-am=shorts.modifiers.new('Same anatomical rig','ARMATURE');am.object=rig;am.use_deform_preserve_volume=True
+am=shorts.modifiers.new('Same anatomical rig','ARMATURE');am.object=rig;am.use_deform_preserve_volume=next((m.use_deform_preserve_volume for m in h.modifiers if m.type=='ARMATURE'), False)
 # Snap boundary loops to a smooth tailored hem and waistband.
 edge_counts={}
 for p in me.polygons:
