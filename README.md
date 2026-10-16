@@ -28,6 +28,9 @@
 ### 傳統硬舉
 ![Conventional deadlift](conventional_deadlift_xhigh.gif)
 
+### 相撲硬舉
+![Sumo deadlift](sumo_deadlift_xhigh.gif)
+
 以上範例皆為 960×960，白底、完整人體、無圖片文字。側平舉 3 秒；其餘動作 4 秒循環。
 
 ## 快速開始
