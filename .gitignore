@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.blend1
+assets/improved_human.blend
+examples/*/output/
+!examples/*/output/*.json
+*.log

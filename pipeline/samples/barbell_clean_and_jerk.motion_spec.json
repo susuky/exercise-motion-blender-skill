@@ -1,0 +1,362 @@
+{
+  "exercise_id": "barbell_clean_and_jerk_19622",
+  "exercise_name": "Barbell Clean and Jerk",
+  "variation": "Olympic Squat Clean to Split Jerk (bilateral pronated hook grip)",
+  "movement_pattern": "olympic_clean_and_jerk",
+  "source_reference": {
+    "provider": "GymVisual",
+    "reference_id": "519013 (URL ID 19622)",
+    "url": "https://gymvisual.com/animated-gifs/19622-barbell-clean-and-jerk.html",
+    "style": "Full color anatomical muscle highlight",
+    "gender": "Male"
+  },
+  "muscles": {
+    "primary": [
+      "quadriceps",
+      "gluteus_maximus",
+      "deltoids",
+      "trapezius",
+      "hamstrings"
+    ],
+    "secondary": [
+      "triceps_brachii",
+      "gastrocnemius_soleus",
+      "erector_spinae",
+      "rectus_abdominis",
+      "forearm_flexors"
+    ]
+  },
+  "setup": {
+    "body_position": "standing",
+    "stance": "hip_width_pull_to_split_jerk",
+    "grip": "pronated_hook_outside_shoulders",
+    "grip_width_m": 0.56,
+    "stance_width_m": 0.24,
+    "bench_angle": null
+  },
+  "equipment": [
+    {
+      "type": "barbell",
+      "count": 1,
+      "handheld": true,
+      "mass_kg": 100.0,
+      "bar_length_m": 2.2,
+      "plate_radius_m": 0.225
+    }
+  ],
+  "laterality": "bilateral",
+  "timing": {
+    "fps": 24,
+    "duration_sec": 6.0,
+    "loop": true
+  },
+  "phases": [
+    {
+      "name": "start_setup",
+      "start_t": 0.0,
+      "end_t": 0.45,
+      "tempo_hint": "hold",
+      "easing": "ease_in_out",
+      "description": "Hips higher than knees, shoulders over barbell at mid-foot, plates resting on floor (z=0.225m)."
+    },
+    {
+      "name": "first_pull",
+      "start_t": 0.45,
+      "end_t": 1.15,
+      "tempo_hint": "controlled_drive",
+      "easing": "ease_in_out",
+      "description": "Leg drive lifts barbell from floor (z=0.225m) to just above knees (z=0.54m) while maintaining torso angle."
+    },
+    {
+      "name": "second_pull_extension",
+      "start_t": 1.15,
+      "end_t": 1.65,
+      "tempo_hint": "explosive_drive",
+      "easing": "explosive",
+      "description": "Knees transition under bar into violent triple extension of hips, knees, and ankles with trapezius shrug."
+    },
+    {
+      "name": "third_pull_squat_catch",
+      "start_t": 1.65,
+      "end_t": 2.35,
+      "tempo_hint": "rapid_turnover",
+      "easing": "ease_in_out",
+      "description": "Pull body aggressively under weightless bar, whipping elbows forward/high to catch in deep front squat."
+    },
+    {
+      "name": "clean_recovery",
+      "start_t": 2.35,
+      "end_t": 3.1,
+      "tempo_hint": "drive_up",
+      "easing": "ease_in_out",
+      "description": "Drive up out of front squat into standing front rack position."
+    },
+    {
+      "name": "jerk_dip",
+      "start_t": 3.1,
+      "end_t": 3.55,
+      "tempo_hint": "controlled_down",
+      "easing": "ease_in_out",
+      "description": "Vertical torso dip bending knees ~35 deg with barbell firmly on anterior deltoid shelf."
+    },
+    {
+      "name": "jerk_drive",
+      "start_t": 3.55,
+      "end_t": 3.9,
+      "tempo_hint": "explosive_drive",
+      "easing": "explosive",
+      "description": "Explosive upward leg drive launching barbell vertically off shoulders."
+    },
+    {
+      "name": "split_jerk_catch",
+      "start_t": 3.9,
+      "end_t": 4.45,
+      "tempo_hint": "punch_under",
+      "easing": "ease_in_out",
+      "description": "Punch arms to overhead lockout while splitting feet (left foot forward vertical shin, right foot back heel raised)."
+    },
+    {
+      "name": "split_recovery_lockout",
+      "start_t": 4.45,
+      "end_t": 5.15,
+      "tempo_hint": "step_recover_hold",
+      "easing": "ease_in_out",
+      "description": "Front foot steps back, rear foot steps forward to parallel stance with barbell locked overhead."
+    },
+    {
+      "name": "eccentric_return_to_floor",
+      "start_t": 5.15,
+      "end_t": 6.0,
+      "tempo_hint": "controlled_down",
+      "easing": "ease_in_out",
+      "description": "Lower barbell via front rack back to starting setup position on lifting platform."
+    }
+  ],
+  "root_trajectory": [
+    {"t": 0.0, "x": 0.0, "y": -0.02, "z": 0.44, "torso_lean_deg": 56.0, "split_step_m": 0.0},
+    {"t": 0.45, "x": 0.0, "y": -0.02, "z": 0.44, "torso_lean_deg": 56.0, "split_step_m": 0.0},
+    {"t": 1.15, "x": 0.0, "y": -0.02, "z": 0.72, "torso_lean_deg": 34.0, "split_step_m": 0.0},
+    {"t": 1.65, "x": 0.0, "y": 0.02, "z": 0.94, "torso_lean_deg": -4.0, "split_step_m": 0.0},
+    {"t": 2.35, "x": 0.0, "y": -0.04, "z": 0.48, "torso_lean_deg": 10.0, "split_step_m": 0.0},
+    {"t": 3.1, "x": 0.0, "y": 0.0, "z": 0.90, "torso_lean_deg": 2.0, "split_step_m": 0.0},
+    {"t": 3.55, "x": 0.0, "y": 0.0, "z": 0.77, "torso_lean_deg": 2.0, "split_step_m": 0.0},
+    {"t": 3.9, "x": 0.0, "y": 0.0, "z": 0.94, "torso_lean_deg": 0.0, "split_step_m": 0.0},
+    {"t": 4.45, "x": 0.0, "y": 0.0, "z": 0.72, "torso_lean_deg": 1.0, "split_step_m": 0.34},
+    {"t": 5.15, "x": 0.0, "y": 0.0, "z": 0.90, "torso_lean_deg": 0.0, "split_step_m": 0.0},
+    {"t": 5.55, "x": 0.0, "y": 0.0, "z": 0.84, "torso_lean_deg": 14.0, "split_step_m": 0.0},
+    {"t": 6.0, "x": 0.0, "y": -0.02, "z": 0.44, "torso_lean_deg": 56.0, "split_step_m": 0.0}
+  ],
+  "joint_targets": [
+    {
+      "joint": "left_hip",
+      "track": [
+        {"t": 0.0, "flexion_deg": 98.0, "abduction_deg": 8.0, "rotation_deg": 5.0},
+        {"t": 0.45, "flexion_deg": 98.0, "abduction_deg": 8.0, "rotation_deg": 5.0},
+        {"t": 1.15, "flexion_deg": 55.0, "abduction_deg": 6.0, "rotation_deg": 4.0},
+        {"t": 1.65, "flexion_deg": 0.0, "abduction_deg": 5.0, "rotation_deg": 0.0},
+        {"t": 2.35, "flexion_deg": 115.0, "abduction_deg": 16.0, "rotation_deg": 12.0},
+        {"t": 3.1, "flexion_deg": 6.0, "abduction_deg": 6.0, "rotation_deg": 4.0},
+        {"t": 3.55, "flexion_deg": 28.0, "abduction_deg": 8.0, "rotation_deg": 5.0},
+        {"t": 3.9, "flexion_deg": 0.0, "abduction_deg": 6.0, "rotation_deg": 0.0},
+        {"t": 4.45, "flexion_deg": 58.0, "abduction_deg": 8.0, "rotation_deg": 4.0},
+        {"t": 5.15, "flexion_deg": 4.0, "abduction_deg": 5.0, "rotation_deg": 2.0},
+        {"t": 5.55, "flexion_deg": 22.0, "abduction_deg": 6.0, "rotation_deg": 4.0},
+        {"t": 6.0, "flexion_deg": 98.0, "abduction_deg": 8.0, "rotation_deg": 5.0}
+      ]
+    },
+    {
+      "joint": "right_hip",
+      "track": [
+        {"t": 0.0, "flexion_deg": 98.0, "abduction_deg": 8.0, "rotation_deg": -5.0},
+        {"t": 0.45, "flexion_deg": 98.0, "abduction_deg": 8.0, "rotation_deg": -5.0},
+        {"t": 1.15, "flexion_deg": 55.0, "abduction_deg": 6.0, "rotation_deg": -4.0},
+        {"t": 1.65, "flexion_deg": 0.0, "abduction_deg": 5.0, "rotation_deg": 0.0},
+        {"t": 2.35, "flexion_deg": 115.0, "abduction_deg": 16.0, "rotation_deg": -12.0},
+        {"t": 3.1, "flexion_deg": 6.0, "abduction_deg": 6.0, "rotation_deg": -4.0},
+        {"t": 3.55, "flexion_deg": 28.0, "abduction_deg": 8.0, "rotation_deg": -5.0},
+        {"t": 3.9, "flexion_deg": 0.0, "abduction_deg": 6.0, "rotation_deg": 0.0},
+        {"t": 4.45, "flexion_deg": -22.0, "abduction_deg": 8.0, "rotation_deg": -4.0},
+        {"t": 5.15, "flexion_deg": 4.0, "abduction_deg": 5.0, "rotation_deg": -2.0},
+        {"t": 5.55, "flexion_deg": 22.0, "abduction_deg": 6.0, "rotation_deg": -4.0},
+        {"t": 6.0, "flexion_deg": 98.0, "abduction_deg": 8.0, "rotation_deg": -5.0}
+      ]
+    },
+    {
+      "joint": "left_knee",
+      "track": [
+        {"t": 0.0, "flexion_deg": 95.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 0.45, "flexion_deg": 95.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 1.15, "flexion_deg": 38.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 1.65, "flexion_deg": 4.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 2.35, "flexion_deg": 122.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.1, "flexion_deg": 6.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.55, "flexion_deg": 36.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.9, "flexion_deg": 4.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 4.45, "flexion_deg": 64.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 5.15, "flexion_deg": 5.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 5.55, "flexion_deg": 20.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 6.0, "flexion_deg": 95.0, "abduction_deg": null, "rotation_deg": null}
+      ]
+    },
+    {
+      "joint": "right_knee",
+      "track": [
+        {"t": 0.0, "flexion_deg": 95.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 0.45, "flexion_deg": 95.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 1.15, "flexion_deg": 38.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 1.65, "flexion_deg": 4.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 2.35, "flexion_deg": 122.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.1, "flexion_deg": 6.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.55, "flexion_deg": 36.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.9, "flexion_deg": 4.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 4.45, "flexion_deg": 42.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 5.15, "flexion_deg": 5.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 5.55, "flexion_deg": 20.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 6.0, "flexion_deg": 95.0, "abduction_deg": null, "rotation_deg": null}
+      ]
+    },
+    {
+      "joint": "left_ankle",
+      "track": [
+        {"t": 0.0, "flexion_deg": 22.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 0.45, "flexion_deg": 22.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 1.15, "flexion_deg": 6.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 1.65, "flexion_deg": -28.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 2.35, "flexion_deg": 26.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.1, "flexion_deg": 0.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.55, "flexion_deg": 14.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.9, "flexion_deg": -24.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 4.45, "flexion_deg": 12.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 5.15, "flexion_deg": 0.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 6.0, "flexion_deg": 22.0, "abduction_deg": null, "rotation_deg": null}
+      ]
+    },
+    {
+      "joint": "right_ankle",
+      "track": [
+        {"t": 0.0, "flexion_deg": 22.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 0.45, "flexion_deg": 22.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 1.15, "flexion_deg": 6.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 1.65, "flexion_deg": -28.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 2.35, "flexion_deg": 26.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.1, "flexion_deg": 0.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.55, "flexion_deg": 14.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.9, "flexion_deg": -24.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 4.45, "flexion_deg": -18.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 5.15, "flexion_deg": 0.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 6.0, "flexion_deg": 22.0, "abduction_deg": null, "rotation_deg": null}
+      ]
+    },
+    {
+      "joint": "left_shoulder",
+      "track": [
+        {"t": 0.0, "flexion_deg": 42.0, "abduction_deg": 14.0, "rotation_deg": -10.0},
+        {"t": 0.45, "flexion_deg": 42.0, "abduction_deg": 14.0, "rotation_deg": -10.0},
+        {"t": 1.15, "flexion_deg": 26.0, "abduction_deg": 14.0, "rotation_deg": -10.0},
+        {"t": 1.65, "flexion_deg": 35.0, "abduction_deg": 32.0, "rotation_deg": -20.0},
+        {"t": 2.35, "flexion_deg": 96.0, "abduction_deg": 18.0, "rotation_deg": 35.0},
+        {"t": 3.1, "flexion_deg": 92.0, "abduction_deg": 18.0, "rotation_deg": 35.0},
+        {"t": 3.55, "flexion_deg": 92.0, "abduction_deg": 18.0, "rotation_deg": 35.0},
+        {"t": 3.9, "flexion_deg": 128.0, "abduction_deg": 24.0, "rotation_deg": 15.0},
+        {"t": 4.45, "flexion_deg": 174.0, "abduction_deg": 16.0, "rotation_deg": 0.0},
+        {"t": 5.15, "flexion_deg": 174.0, "abduction_deg": 16.0, "rotation_deg": 0.0},
+        {"t": 5.55, "flexion_deg": 88.0, "abduction_deg": 18.0, "rotation_deg": 25.0},
+        {"t": 6.0, "flexion_deg": 42.0, "abduction_deg": 14.0, "rotation_deg": -10.0}
+      ]
+    },
+    {
+      "joint": "right_shoulder",
+      "track": [
+        {"t": 0.0, "flexion_deg": 42.0, "abduction_deg": 14.0, "rotation_deg": 10.0},
+        {"t": 0.45, "flexion_deg": 42.0, "abduction_deg": 14.0, "rotation_deg": 10.0},
+        {"t": 1.15, "flexion_deg": 26.0, "abduction_deg": 14.0, "rotation_deg": 10.0},
+        {"t": 1.65, "flexion_deg": 35.0, "abduction_deg": 32.0, "rotation_deg": 20.0},
+        {"t": 2.35, "flexion_deg": 96.0, "abduction_deg": 18.0, "rotation_deg": -35.0},
+        {"t": 3.1, "flexion_deg": 92.0, "abduction_deg": 18.0, "rotation_deg": -35.0},
+        {"t": 3.55, "flexion_deg": 92.0, "abduction_deg": 18.0, "rotation_deg": -35.0},
+        {"t": 3.9, "flexion_deg": 128.0, "abduction_deg": 24.0, "rotation_deg": -15.0},
+        {"t": 4.45, "flexion_deg": 174.0, "abduction_deg": 16.0, "rotation_deg": 0.0},
+        {"t": 5.15, "flexion_deg": 174.0, "abduction_deg": 16.0, "rotation_deg": 0.0},
+        {"t": 5.55, "flexion_deg": 88.0, "abduction_deg": 18.0, "rotation_deg": -25.0},
+        {"t": 6.0, "flexion_deg": 42.0, "abduction_deg": 14.0, "rotation_deg": 10.0}
+      ]
+    },
+    {
+      "joint": "left_elbow",
+      "track": [
+        {"t": 0.0, "flexion_deg": 4.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 0.45, "flexion_deg": 4.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 1.15, "flexion_deg": 6.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 1.65, "flexion_deg": 48.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 2.35, "flexion_deg": 128.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.1, "flexion_deg": 124.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.55, "flexion_deg": 124.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.9, "flexion_deg": 72.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 4.45, "flexion_deg": 5.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 5.15, "flexion_deg": 5.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 5.55, "flexion_deg": 115.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 6.0, "flexion_deg": 4.0, "abduction_deg": null, "rotation_deg": null}
+      ]
+    },
+    {
+      "joint": "right_elbow",
+      "track": [
+        {"t": 0.0, "flexion_deg": 4.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 0.45, "flexion_deg": 4.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 1.15, "flexion_deg": 6.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 1.65, "flexion_deg": 48.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 2.35, "flexion_deg": 128.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.1, "flexion_deg": 124.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.55, "flexion_deg": 124.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 3.9, "flexion_deg": 72.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 4.45, "flexion_deg": 5.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 5.15, "flexion_deg": 5.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 5.55, "flexion_deg": 115.0, "abduction_deg": null, "rotation_deg": null},
+        {"t": 6.0, "flexion_deg": 4.0, "abduction_deg": null, "rotation_deg": null}
+      ]
+    }
+  ],
+  "equipment_path": [
+    {
+      "object": "barbell",
+      "track": [
+        {"t": 0.0, "x": 0.0, "y": 0.22, "z": 0.225},
+        {"t": 0.45, "x": 0.0, "y": 0.22, "z": 0.225},
+        {"t": 1.15, "x": 0.0, "y": 0.17, "z": 0.54},
+        {"t": 1.65, "x": 0.0, "y": 0.13, "z": 1.06},
+        {"t": 2.35, "x": 0.0, "y": 0.14, "z": 0.96},
+        {"t": 3.1, "x": 0.0, "y": 0.14, "z": 1.42},
+        {"t": 3.55, "x": 0.0, "y": 0.14, "z": 1.29},
+        {"t": 3.9, "x": 0.0, "y": 0.11, "z": 1.68},
+        {"t": 4.45, "x": 0.0, "y": 0.02, "z": 1.88},
+        {"t": 5.15, "x": 0.0, "y": 0.01, "z": 2.04},
+        {"t": 5.55, "x": 0.0, "y": 0.16, "z": 1.34},
+        {"t": 6.0, "x": 0.0, "y": 0.22, "z": 0.225}
+      ]
+    }
+  ],
+  "contacts": [
+    {"body_part": "left_hand", "target": "barbell", "mode": "grasp", "ik_lock": true},
+    {"body_part": "right_hand", "target": "barbell", "mode": "grasp", "ik_lock": true},
+    {"body_part": "left_foot", "target": "floor", "mode": "support"},
+    {"body_part": "right_foot", "target": "floor", "mode": "support"}
+  ],
+  "camera": {
+    "preset": "three_quarter_front",
+    "distance_m": 3.6,
+    "elevation_deg": 14.0,
+    "azimuth_deg": 38.0,
+    "resolution": [1080, 1080]
+  },
+  "notes": [
+    "S-curve vertical bar path: slight rearward sweep in first pull, close contact at hip power position, high-elbow turnover into front squat catch.",
+    "Vertical torso maintained throughout jerk dip and drive; split catch lands with vertical front shin and bent rear knee with heel elevated.",
+    "Closed-loop 6.0s cycle at 24 fps (144 frames) returning cleanly to starting platform setup."
+  ],
+  "confidence": {
+    "exercise_label": 0.99,
+    "phase_breakdown": 0.96,
+    "joint_targets": 0.93,
+    "equipment_path": 0.95
+  }
+}

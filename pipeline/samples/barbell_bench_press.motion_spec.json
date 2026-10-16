@@ -1,0 +1,45 @@
+{
+  "exercise_id": "barbell_bench_press",
+  "exercise_name": "Barbell Bench Press",
+  "variation": "flat bench bilateral pronated grip",
+  "movement_pattern": "horizontal_press",
+  "muscles": {
+    "primary": ["pectoralis_major", "deltoids"],
+    "secondary": ["triceps_brachii", "core"]
+  },
+  "setup": {
+    "body_position": "supine_on_bench",
+    "stance": "feet_planted",
+    "grip": "pronated_medium",
+    "grip_width_m": 0.62,
+    "bench_angle": 0
+  },
+  "equipment": [
+    {"type": "barbell", "count": 1, "handheld": true},
+    {"type": "bench", "count": 1, "handheld": false}
+  ],
+  "laterality": "bilateral",
+  "timing": {"fps": 12, "duration_sec": 3.0, "loop": true},
+  "phases": [
+    {"name": "lockout", "start_t": 0.0, "end_t": 0.3, "tempo_hint": "hold"},
+    {"name": "eccentric", "start_t": 0.3, "end_t": 1.4, "tempo_hint": "controlled_down"},
+    {"name": "chest_pause", "start_t": 1.4, "end_t": 1.7, "tempo_hint": "brief_pause"},
+    {"name": "press", "start_t": 1.7, "end_t": 2.8, "tempo_hint": "drive_up"},
+    {"name": "reset", "start_t": 2.8, "end_t": 3.0, "tempo_hint": "settle"}
+  ],
+  "joint_targets": [
+    {"joint": "left_elbow", "track": [{"t": 0.0, "flexion_deg": 5, "abduction_deg": null, "rotation_deg": null},{"t": 1.4, "flexion_deg": 85, "abduction_deg": null, "rotation_deg": null},{"t": 3.0, "flexion_deg": 5, "abduction_deg": null, "rotation_deg": null}]},
+    {"joint": "right_elbow", "track": [{"t": 0.0, "flexion_deg": 5, "abduction_deg": null, "rotation_deg": null},{"t": 1.4, "flexion_deg": 85, "abduction_deg": null, "rotation_deg": null},{"t": 3.0, "flexion_deg": 5, "abduction_deg": null, "rotation_deg": null}]},
+    {"joint": "left_shoulder", "track": [{"t": 0.0, "flexion_deg": 80, "abduction_deg": 25, "rotation_deg": -10},{"t": 1.4, "flexion_deg": 30, "abduction_deg": 55, "rotation_deg": -20},{"t": 3.0, "flexion_deg": 80, "abduction_deg": 25, "rotation_deg": -10}]},
+    {"joint": "right_shoulder", "track": [{"t": 0.0, "flexion_deg": 80, "abduction_deg": 25, "rotation_deg": 10},{"t": 1.4, "flexion_deg": 30, "abduction_deg": 55, "rotation_deg": 20},{"t": 3.0, "flexion_deg": 80, "abduction_deg": 25, "rotation_deg": 10}]}
+  ],
+  "contacts": [
+    {"body_part": "left_hand", "target": "barbell", "mode": "grasp"},
+    {"body_part": "right_hand", "target": "barbell", "mode": "grasp"},
+    {"body_part": "upper_back", "target": "bench", "mode": "support"},
+    {"body_part": "glutes", "target": "bench", "mode": "support"},
+    {"body_part": "left_foot", "target": "floor", "mode": "support"},
+    {"body_part": "right_foot", "target": "floor", "mode": "support"}
+  ],
+  "notes": ["bar path slightly back toward shoulders on ascent", "scapula retracted and depressed"]
+}

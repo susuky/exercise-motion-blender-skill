@@ -1,0 +1,789 @@
+{
+  "summary": {
+    "unique_frames": 24,
+    "animation_fps": 24,
+    "delivery_cycles": 4,
+    "delivery_duration_seconds": 4,
+    "resolution": [
+      960,
+      960
+    ],
+    "continuous_skin_vertices": 856194,
+    "max_grip_exit_error_m": 3.332000937312528e-08,
+    "minimum_rope_ground_clearance_m": 0.036500001728534695,
+    "max_wrist_alignment_degrees": 0.0,
+    "max_deep_handle_penetrating_vertices": 0,
+    "rig_loop_closure_max_matrix_error": 0.0,
+    "rope_loop_closure_max_point_error_m": 0.0
+  },
+  "frame_checks": [
+    {
+      "frame": 1,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269380626711097,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540390655455893,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 1,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269380626711097,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540390655455893,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 2,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.1026937483109866,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540287241521399,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 2,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269369375568073,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540303636828766,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 3,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269399618300813,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014539985265326823,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 3,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269375327055842,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540223106372934,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 4,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269369510185096,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540293934611407,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 3.332000937312528e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 4,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269353561598095,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540465692486937,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 5,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.1026938336510141,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014442572933047057,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 5,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269357784327228,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540178879418874,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 6,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269398137074982,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014510041250880065,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 6,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269333779931115,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540638037458883,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 7,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269385253168853,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014537608416382243,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 7,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269349622272037,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540494143783047,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 8,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269398137074982,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014510041250880065,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 8,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269333779931115,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540638037458883,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 9,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.1026938336510141,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014442572933047057,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 9,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269357784327228,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540178879418874,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 10,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269369510185096,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540293934611407,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 3.332000937312528e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 10,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269353561598095,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540465692486937,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 11,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269399618300813,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014539985265326823,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 11,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269375327055842,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540223106372934,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 12,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.1026937483109866,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540287241521399,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 12,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269369375568073,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540303636828766,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 13,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269380626711097,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540390655455893,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 13,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269380626711097,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540390655455893,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 14,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269369375568073,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540303636828766,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 14,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.1026937483109866,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540287241521399,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 15,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269375327055842,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540223106372934,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 15,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269399618300813,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014539985265326823,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 16,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269353561598095,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540465692486937,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 16,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269369510185096,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540293934611407,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 3.332000937312528e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 17,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269357784327228,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540178879418874,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 17,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.1026938336510141,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014475302642868991,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 18,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269333779931115,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540638037458883,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 18,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269398137074982,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014510137191437511,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 19,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269349622272037,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540494143783047,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 19,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269385253168853,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.01453763151167868,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 20,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269333779931115,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540638037458883,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 20,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269398137074982,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014510137191437511,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 21,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269357784327228,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540178879418874,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 21,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.1026938336510141,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014475302642868991,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 22,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269353561598095,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540465692486937,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 22,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269369510185096,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540293934611407,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 3.332000937312528e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 23,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269375327055842,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540223106372934,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 23,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269399618300813,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014539985265326823,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 0.0,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 24,
+      "side": "l",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.10269369375568073,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540303636828766,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    },
+    {
+      "frame": 24,
+      "side": "r",
+      "wrist_alignment_degrees": 0.0,
+      "hand_to_grip_center_m": 0.1026937483109866,
+      "handle_radius_m": 0.0145,
+      "closest_hand_surface_to_shaft_axis_m": 0.014540287241521399,
+      "hand_vertices_inside_handle_inner_10mm": 0,
+      "rope_exit_error_m": 2.9802322387695312e-08,
+      "rope_surface_ground_clearance_m": 0.036500001728534695,
+      "anchor": [
+        -0.06599999964237213,
+        -3.0799999237060547,
+        0.0560000017285347
+      ]
+    }
+  ]
+}

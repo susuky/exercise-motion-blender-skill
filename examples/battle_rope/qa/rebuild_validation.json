@@ -1,0 +1,15 @@
+{
+  "delivered_scene": {
+    "vertices": 856194,
+    "mesh_coordinates_sha256": "4d2e69988d5dc8e89f3ce942b9387a6c7faceac454807edc2bbfedeebdf2910d",
+    "vertex_colors_sha256": "36b345a4c5d2961546bce696bd01bc26a3bbdeee49f7fd601d5167dd47b3ee07",
+    "shorts_mesh_sha256": "1c17b7475bcc0048684fbe4ccfe102e0a730cde1528d7fffc79f333d34e92d64"
+  },
+  "rebuilt_human": {
+    "vertices": 856194,
+    "mesh_coordinates_sha256": "4d2e69988d5dc8e89f3ce942b9387a6c7faceac454807edc2bbfedeebdf2910d",
+    "vertex_colors_sha256": "36b345a4c5d2961546bce696bd01bc26a3bbdeee49f7fd601d5167dd47b3ee07",
+    "shorts_mesh_sha256": "1c17b7475bcc0048684fbe4ccfe102e0a730cde1528d7fffc79f333d34e92d64"
+  },
+  "exact_match": true
+}

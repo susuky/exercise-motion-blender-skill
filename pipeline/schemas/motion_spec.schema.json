@@ -1,0 +1,276 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Universal Exercise Motion Spec v3.0",
+  "description": "General-purpose biomechanical & kinematic specification supporting free weights, battle ropes, cable/lever machines, medicine balls, kettlebells, and bodyweight exercises in Blender.",
+  "type": "object",
+  "required": [
+    "exercise_name",
+    "variation",
+    "setup",
+    "equipment",
+    "laterality",
+    "timing",
+    "phases",
+    "joint_targets",
+    "contacts"
+  ],
+  "properties": {
+    "exercise_id": {"type": "string"},
+    "exercise_name": {"type": "string"},
+    "variation": {"type": "string"},
+    "movement_pattern": {
+      "type": "string",
+      "enum": [
+        "olympic_clean_and_jerk",
+        "olympic_snatch",
+        "squat",
+        "jump_squat_plyo",
+        "hinge",
+        "kettlebell_swing_squat",
+        "horizontal_press",
+        "vertical_press",
+        "horizontal_pull",
+        "vertical_pull",
+        "isolation_raise",
+        "isolation_curl",
+        "knee_extension",
+        "leg_press",
+        "rope_wave_conditioning",
+        "ballistic_slam_throw",
+        "lunge_split",
+        "core"
+      ]
+    },
+    "source_reference": {
+      "type": "object",
+      "properties": {
+        "provider": {"type": "string"},
+        "reference_id": {"type": "string"},
+        "url": {"type": "string"},
+        "style": {"type": "string"},
+        "gender": {"type": "string"}
+      }
+    },
+    "muscles": {
+      "type": "object",
+      "properties": {
+        "primary": {"type": "array", "items": {"type": "string"}},
+        "secondary": {"type": "array", "items": {"type": "string"}},
+        "stabilizers": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "setup": {
+      "type": "object",
+      "required": ["body_position", "stance", "grip"],
+      "properties": {
+        "body_position": {
+          "type": "string",
+          "enum": [
+            "standing",
+            "seated",
+            "supine_on_bench",
+            "incline_bench",
+            "split_stance",
+            "prone",
+            "kneeling",
+            "plank",
+            "hanging"
+          ]
+        },
+        "stance": {"type": "string"},
+        "grip": {"type": "string"},
+        "grip_width_m": {"type": ["number", "null"]},
+        "stance_width_m": {"type": ["number", "null"]},
+        "bench_angle": {"type": ["number", "null"]},
+        "seat_height_m": {"type": ["number", "null"]}
+      }
+    },
+    "equipment": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "count"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "barbell",
+              "dumbbell",
+              "kettlebell",
+              "medicine_ball",
+              "battle_ropes",
+              "cable_machine",
+              "lever_machine",
+              "bench",
+              "pullup_bar",
+              "bodyweight"
+            ]
+          },
+          "count": {"type": "integer"},
+          "handheld": {"type": "boolean"},
+          "mass_kg": {"type": ["number", "null"]},
+          "bar_length_m": {"type": ["number", "null"]},
+          "plate_radius_m": {"type": ["number", "null"]},
+          "ball_radius_m": {"type": ["number", "null"]},
+          "rope_length_m": {"type": ["number", "null"]},
+          "anchor_point": {
+            "type": "array",
+            "items": {"type": "number"},
+            "minItems": 3,
+            "maxItems": 3
+          }
+        }
+      }
+    },
+    "laterality": {
+      "type": "string",
+      "enum": ["bilateral", "unilateral_left", "unilateral_right", "alternating"]
+    },
+    "timing": {
+      "type": "object",
+      "required": ["fps", "duration_sec"],
+      "properties": {
+        "fps": {"type": "integer", "minimum": 1, "maximum": 120},
+        "duration_sec": {"type": "number", "exclusiveMinimum": 0},
+        "loop": {"type": "boolean"}
+      }
+    },
+    "phases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "start_t", "end_t"],
+        "properties": {
+          "name": {"type": "string"},
+          "start_t": {"type": "number", "minimum": 0},
+          "end_t": {"type": "number", "minimum": 0},
+          "tempo_hint": {"type": "string"},
+          "easing": {
+            "type": "string",
+            "enum": ["linear", "ease_in_out", "ease_in", "ease_out", "explosive", "hold"]
+          },
+          "description": {"type": "string"}
+        }
+      }
+    },
+    "root_trajectory": {
+      "type": "array",
+      "description": "Pelvis/root trajectory, torso pitch/lean, split step, or jump flight height over time.",
+      "items": {
+        "type": "object",
+        "required": ["t"],
+        "properties": {
+          "t": {"type": "number"},
+          "x": {"type": "number"},
+          "y": {"type": "number"},
+          "z": {"type": "number"},
+          "torso_lean_deg": {"type": ["number", "null"]},
+          "pelvis_tilt_deg": {"type": ["number", "null"]},
+          "split_step_m": {"type": ["number", "null"]},
+          "flight_z_m": {"type": ["number", "null"]}
+        }
+      }
+    },
+    "joint_targets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["joint", "track"],
+        "properties": {
+          "joint": {"type": "string"},
+          "track": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": ["t"],
+              "properties": {
+                "t": {"type": "number"},
+                "flexion_deg": {"type": ["number", "null"]},
+                "abduction_deg": {"type": ["number", "null"]},
+                "rotation_deg": {"type": ["number", "null"]}
+              }
+            }
+          }
+        }
+      }
+    },
+    "equipment_path": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["object", "track"],
+        "properties": {
+          "object": {"type": "string"},
+          "track": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": ["t", "x", "y", "z"],
+              "properties": {
+                "t": {"type": "number"},
+                "x": {"type": "number"},
+                "y": {"type": "number"},
+                "z": {"type": "number"},
+                "pitch_deg": {"type": ["number", "null"]},
+                "roll_deg": {"type": ["number", "null"]},
+                "yaw_deg": {"type": ["number", "null"]}
+              }
+            }
+          }
+        }
+      }
+    },
+    "contacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["body_part", "target"],
+        "properties": {
+          "body_part": {"type": "string"},
+          "target": {"type": "string"},
+          "mode": {
+            "type": "string",
+            "enum": [
+              "grasp",
+              "support",
+              "seated_support",
+              "back_support",
+              "roller_pad",
+              "tethered_wave",
+              "ballistic_release"
+            ]
+          },
+          "start_t": {"type": ["number", "null"]},
+          "end_t": {"type": ["number", "null"]},
+          "ik_lock": {"type": "boolean"}
+        }
+      }
+    },
+    "camera": {
+      "type": "object",
+      "properties": {
+        "preset": {
+          "type": "string",
+          "enum": ["three_quarter_front", "side_sagittal", "front_coronal", "dual_orthographic"]
+        },
+        "distance_m": {"type": "number"},
+        "elevation_deg": {"type": "number"},
+        "azimuth_deg": {"type": "number"},
+        "resolution": {
+          "type": "array",
+          "items": {"type": "integer"},
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    },
+    "notes": {"type": "array", "items": {"type": "string"}},
+    "confidence": {
+      "type": "object",
+      "additionalProperties": {"type": "number"}
+    }
+  }
+}
