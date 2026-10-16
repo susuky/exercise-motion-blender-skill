@@ -6,21 +6,21 @@
 
 紅色表示主要出力／訓練目標；藍色表示次要出力（協同或穩定）；灰色表示本圖未強調。這是功能分類，不是出力百分比。每個動作需先核對肌肉功能與網格位置。
 
-目前展示 GIF 正在依此規則更新。
+展示 GIF 已採用紅／藍肌群分類。被短褲遮住的臀肌、被鏡頭遮住的後側肌群，不會顯示完整色塊。
 
 ## 生成成果
 
 ### 啞鈴側平舉
-![Dumbbell lateral raise](media/lateral_raise.gif)
+![Dumbbell lateral raise](lateral_raise_xhigh.gif)
 
 ### 交替甩戰繩
-![Alternating battle rope waves](media/battle_rope.gif)
+![Alternating battle rope waves](battle_rope_xhigh.gif)
 
 ### 坐姿寬握滑輪下拉
-![Seated wide-grip lat pulldown](media/lat_pulldown.gif)
+![Seated wide-grip lat pulldown](lat_pulldown_xhigh_recolored.gif)
 
 ### 槓鈴背蹲
-![Barbell back squat](barbell_squat_xhigh.gif)
+![Barbell back squat](barbell_squat_xhigh_recolored.gif)
 
 ### 槓鈴臥推
 ![Barbell bench press](barbell_bench_press_xhigh.gif)
