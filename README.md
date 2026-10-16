@@ -33,6 +33,10 @@
 
 以上範例皆為 960×960，白底、完整人體、無圖片文字。側平舉 3 秒；其餘動作 4 秒循環。
 
+## 紅／藍版完整來源
+
+[下載七個示範的精簡重建來源](exercise_red_blue_sources.zip)：包含共用基礎人體、建模／渲染程式、肌群配色修正與 QA。解壓後先執行 rebuild_human.py；各範例命令見包內 README。
+
 ## 快速開始
 
 環境：Blender 4.3.2、Python 3。Python 依賴：Pillow、NumPy。
