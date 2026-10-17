@@ -158,7 +158,7 @@ scene=bpy.context.scene;scene.render.engine='BLENDER_WORKBENCH';scene.render.res
 sh=scene.display.shading;sh.light='STUDIO';sh.studio_light='studio.sl';sh.studiolight_rotate_z=.25;sh.color_type='VERTEX';sh.background_type='WORLD';sh.show_shadows=True;sh.show_cavity=True;sh.cavity_type='BOTH';sh.curvature_ridge_factor=.45;sh.curvature_valley_factor=.55;sh.cavity_ridge_factor=.4;sh.cavity_valley_factor=.5;sh.show_specular_highlight=True;sh.show_object_outline=False
 scene.display.render_aa='8';scene.view_settings.view_transform='Standard';scene.view_settings.exposure=.28;scene.render.fps=24;scene.frame_start=1;scene.frame_end=96
 cam=scene.camera;cam.location=V((4.4,-6.4,3.5));target=V((0,-1.35,.72));cam.rotation_euler=(target-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.type='ORTHO';cam.data.ortho_scale=2.95
-scene.frame_set(7);bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'battle_rope_xhigh.blend'),compress=True)
+scene.frame_set(7);bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'battle_rope.blend'),compress=True)
 (QA/'motion_geometry.json').write_text(json.dumps(records,indent=2))
 frames=[7,19,1] if '--preview' in sys.argv else [7]+[f for f in range(1,25) if f!=7]
 for f in frames:

@@ -6,7 +6,7 @@ description: 從健身動作描述或參考媒體建立 Blender 人體與器材�
 
 ## 本版的視覺基準
 
-先在根目錄執行 `blender -b --python rebuild_human.py`，再沿用產生的 `assets/improved_human.blend` 的人體、骨架、肌肉浮雕、頂點色與獨立短褲。先看 `assets/*_reference.png` 的三張成品。本版視覺水準是交付底線；提高速度應靠重用資產、快取與排程，不能自行降低成品畫質。
+首次使用在根目錄執行 `blender -b --python rebuild_human.py`，後續動作直接沿用 `assets/improved_human.blend` 的人體、骨架、肌肉浮雕、頂點色與獨立短褲。先看 `assets/*_reference.png` 的三張成品。本版視覺水準是交付底線；提高速度應靠重用資產、快取與排程，不能自行降低成品畫質。
 
 - 全身連續蒙皮人體，有頭部、臉、手掌、五指與腳趾。
 - 灰白皮膚、自然肌肉體積及方向性肌束細紋；胸肌寬平扇形，腹肌三組淺肌腹。
@@ -20,10 +20,10 @@ description: 從健身動作描述或參考媒體建立 Blender 人體與器材�
 ## 選擇起點
 
 1. 新動作優先載入已改善人體，保留網格、材質、頂點色、骨架與短褲，重建器材及動作。
-2. 手持器材：參照 `examples/xhigh/build_render.py` 的手指圓柱求解、左右手及骨架設定。
-3. 繩索波動：參照 `examples/battle_rope/build_battle_ropes.py`，及其人體重建腳本。
-4. 坐姿滑輪器材：參照 `examples/lat_pulldown_xhigh/build_scene.py` 的座椅、膝墊、鋼索與配重連動。
-5. 舊版動作規格、插值與驗證工具保留於 `pipeline/`。其預覽人體不是本版視覺交付路徑。舊說明位於 `references/legacy-motion-pipeline.md`，其中通用能力敘述需按實際程式與個別動作測試確認。
+2. 手持器材：參照 `examples/lateral_raise/build_render.py` 的手指圓柱求解、左右手及骨架設定。
+3. 繩索波動：參照 `examples/battle_rope/build_battle_ropes.py`。
+4. 坐姿滑輪器材：參照 `examples/lat_pulldown/build_scene.py` 的座椅、膝墊、鋼索與配重連動。
+5. 可用 `pipeline/` 的動作規格、插值與運動學資料工具協助規劃；用法見 [動作資料工具](pipeline/docs/PIPELINE.md)。資料尚未自動套用到人體骨架。
 
 ## 製作與交付
 
@@ -35,7 +35,7 @@ description: 從健身動作描述或參考媒體建立 Blender 人體與器材�
 
 ## 使用現成範例
 
-環境基準：Blender 4.3.2、Python 3、Pillow、NumPy。每個範例的 README 提供其執行命令。先在範例目錄執行，路徑以腳本所在目錄解析。現成資產包含於 ZIP，無須重新下載人體。
+環境基準：Blender 4.3.2、Python 3、Pillow、NumPy。每個範例的 README 提供其執行命令。先在範例目錄執行，路徑以腳本所在目錄解析。基礎人體隨附於 `assets/base_human.blend`；建立後使用 `assets/improved_human.blend`。只有需要修改人體外觀或重建資產時，才用 `-- --rebuild` 從 base 重建。
 
 ## 肌群功能與顏色核對
 

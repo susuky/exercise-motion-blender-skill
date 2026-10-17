@@ -1,8 +1,11 @@
 """Rebuild the improved sculpted human from the provided licensed base mesh."""
-import bpy, math, json, sys
+import bpy, math, json, sys, gc
 from pathlib import Path
 from mathutils import Vector as V, Matrix, Quaternion
 ROOT=Path(__file__).resolve().parent
+if (ROOT/'assets/improved_human.blend').exists() and '--rebuild' not in sys.argv:
+ print('Using existing assets/improved_human.blend; pass --rebuild to recreate it.',flush=True)
+ raise SystemExit(0)
 OUT=ROOT/'output'; OUT.mkdir(exist_ok=True)
 bpy.ops.wm.open_mainfile(filepath=str(ROOT/'assets/base_human.blend'))
 h=bpy.data.objects['Human']; rig=bpy.data.objects['Human.rig']; bones=rig.data.bones
@@ -19,6 +22,8 @@ bpy.ops.object.select_all(action='DESELECT');h.select_set(True);bpy.context.view
 if h.data.shape_keys:
  mixed=h.shape_key_add(name='BakedShape',from_mix=True);coords=[p.co.copy() for p in mixed.data];h.shape_key_clear()
  for v,co in zip(h.data.vertices,coords):v.co=co
+ del coords
+ gc.collect()
 for mod in list(h.modifiers):
  if mod.type=='MASK':bpy.ops.object.modifier_apply(modifier=mod.name)
 sub=h.modifiers.new('Anatomical sculpt topology','SUBSURF');sub.levels=3
@@ -172,6 +177,8 @@ h.data.update()
 print('SCULPT DONE',flush=True)
 attr=h.data.color_attributes.new(name='Anatomical fibres',type='FLOAT_COLOR',domain='POINT')
 for i,c in enumerate(colors):attr.data[i].color=c
+del colors
+gc.collect()
 h.data.color_attributes.active_color=attr
 # Native material supports the same colors when switching from Workbench to EEVEE/Cycles.
 bs=skin.node_tree.nodes.get('Principled BSDF');vc=skin.node_tree.nodes.new('ShaderNodeVertexColor');vc.layer_name=attr.name;skin.node_tree.links.new(vc.outputs['Color'],bs.inputs['Base Color'])
@@ -217,5 +224,5 @@ for i,v in enumerate(verts):
 
 
 bpy.ops.object.camera_add(location=(2.45,-7,2.35));cam=bpy.context.object;cam.name='Full-body presentation camera';bpy.context.scene.camera=cam
-bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'assets/improved_human.blend'),compress=True)
+bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'assets/improved_human.blend'),compress=False)
 print('IMPROVED HUMAN REBUILT',flush=True)

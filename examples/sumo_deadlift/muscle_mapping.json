@@ -1,0 +1,58 @@
+{
+  "legend": {
+    "primary": "red",
+    "secondary": "blue",
+    "other": "gray",
+    "clothing": "black"
+  },
+  "linear_rgb": {
+    "primary_red": [
+      0.68,
+      0.077,
+      0.055
+    ],
+    "secondary_blue": [
+      0.055,
+      0.18,
+      0.6
+    ],
+    "neutral_gray": [
+      0.73,
+      0.75,
+      0.76
+    ]
+  },
+  "muscle_regions": [
+    {
+      "name": "Quadriceps femoris region",
+      "color": "red",
+      "role": "Primary knee extension",
+      "mask": "Anterior thigh, 13–91% of hip-to-knee bone length; smooth angular and longitudinal falloffs."
+    },
+    {
+      "name": "Adductor magnus-centered posteromedial region",
+      "color": "red",
+      "role": "Primary hip-extension contribution in the wide stance",
+      "mask": "Focused proximal posteromedial thigh, 7–70% of hip-to-knee length; does not label the whole medial thigh as one exact muscle."
+    },
+    {
+      "name": "Gluteus maximus region",
+      "color": "red",
+      "role": "Primary hip extension",
+      "mask": "Posterior hip skin in rest z 0.82–0.98 m; normally occluded by the opaque black shorts."
+    },
+    {
+      "name": "Hamstring region",
+      "color": "blue",
+      "role": "Assists hip extension",
+      "mask": "Posterior thigh, 18–87% of hip-to-knee length, excluding primary-region overlap."
+    },
+    {
+      "name": "Lumbar erector spinae regions",
+      "color": "blue",
+      "role": "Maintains neutral spinal posture",
+      "mask": "Paired posterior lumbar strips, rest z 1.02–1.27 m and lateral x 0.018–0.075 m."
+    }
+  ],
+  "interpretation": "Qualitative movement-role regions. The mesh retains its fibre detail and lighting. Anatomical surface masks are smoothly blended to fit the existing skinned model."
+}

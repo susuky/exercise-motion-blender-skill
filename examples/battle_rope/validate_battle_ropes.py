@@ -3,7 +3,7 @@ import numpy as np
 from pathlib import Path
 from mathutils import Vector as V
 R=Path(__file__).resolve().parent;O=R/'output';Q=R/'qa'
-bpy.ops.wm.open_mainfile(filepath=str(O/'battle_rope_xhigh.blend'))
+bpy.ops.wm.open_mainfile(filepath=str(O/'battle_rope.blend'))
 s=bpy.context.scene;h=bpy.data.objects['Human'];r=bpy.data.objects['Human.rig'];groups={g.index:g.name for g in h.vertex_groups};ids={side:[] for side in ['l','r']}
 for v in h.data.vertices:
  for side in ids:
