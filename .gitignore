@@ -5,3 +5,5 @@ assets/improved_human.blend
 examples/*/output/
 !examples/*/output/*.json
 *.log
+
+examples/shared_rig_start/output/

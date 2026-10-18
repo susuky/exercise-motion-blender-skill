@@ -52,6 +52,14 @@ blender -b --python rebuild_human.py
 
 最後一步在首次使用時建立 `assets/improved_human.blend`，包含肌肉浮雕、肌束細紋、骨架蒙皮與有厚度的短褲。後續動作直接載入這個人體；檔案存在時會沿用。需要重新建立人體外觀時，執行 `blender -b --python rebuild_human.py -- --rebuild`。
 
+### 從共用骨架開始新動作
+
+```bash
+blender -b --python examples/shared_rig_start/build_scene.py
+```
+
+[共用起點](examples/shared_rig_start/README.md) 使用 `shared_human.py` 載入既有肌肉人體、原始骨架與短褲，驗證資產及蒙皮設定；每個動作只另外定義動作、器材及肌群遮罩。可用 `HUMAN_BLEND` 指定既有資產，並用 SHA-256 固定版本。保留高模為製作與精查預設；加入 `-- --preview-proxy` 可建立同骨架低模viewport預覽。碰撞加速仍屬獨立實驗。
+
 ### 產生滑輪下拉
 
 ```bash
@@ -76,7 +84,9 @@ python scripts/render_workbench_frames.py examples/lat_pulldown/output/lat_pulld
 ## 檔案結構
 
 - `SKILL.md`：動作製作流程與畫質基準
-- `rebuild_human.py`：重建高精度人體
+- `rebuild_human.py`：首次建立高精度人體
+- `shared_human.py`：載入、驗證共用人體與原骨架
+- `examples/shared_rig_start/`：新動作起點與測試用法
 - `assets/`：基礎人體、展示 GIF、授權與外觀參考
 - `examples/lateral_raise/`：側平舉的完整建模流程
 - `examples/battle_rope/`：繩索波浪、抓握與循環

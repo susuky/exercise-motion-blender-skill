@@ -19,7 +19,7 @@ description: 從健身動作描述或參考媒體建立 Blender 人體與器材�
 
 ## 選擇起點
 
-1. 新動作優先載入已改善人體，保留網格、材質、頂點色、骨架與短褲，重建器材及動作。
+1. 新動作從 `examples/shared_rig_start/build_scene.py` 開始，用 `shared_human.load_shared_human()` 載入並驗證已改善人體。保留網格、材質、肌束明暗、原骨架與短褲；清除舊紅／藍角色色，只另外定義動作、器材與本動作肌群遮罩。用 `human.rest` 與 `human.apply()` 共用完整骨骼姿勢介面。
 2. 手持器材：參照 `examples/lateral_raise/build_render.py` 的手指圓柱求解、左右手及骨架設定。
 3. 繩索波動：參照 `examples/battle_rope/build_battle_ropes.py`。
 4. 坐姿滑輪器材：參照 `examples/lat_pulldown/build_scene.py` 的座椅、膝墊、鋼索與配重連動。
@@ -58,3 +58,7 @@ description: 從健身動作描述或參考媒體建立 Blender 人體與器材�
 ### 衣物蒙皮一致性
 
 建置時檢查人體與短褲 Armature modifier 的 `use_deform_preserve_volume` 一致；短褲沿用人體的實際設定。深屈髖、深蹲、跪姿與坐姿需用 evaluated mesh 檢查衣物與皮膚交疊，不能只確認 rest pose 沒穿模。保留 SOLIDIFY 厚度與原黑色材質。修改蒙皮設定後重跑相關接觸／動畫檢查，數值失配或視覺破洞修正後才交付。
+
+### 代理碰撞成熟度
+
+`experiments/shared_proxy.py` 提供可選同骨架低模預覽；共用起點加 `-- --preview-proxy` 啟用，渲染仍使用高模。低模粗查仍屬實驗，高模維持製作與碰撞精查預設。任何低模代理必須與原高模引用同一骨架，使用一致的權重傳遞與蒙皮方法；減面表面本身不是保守包絡，不能以低模未碰撞作為高模無穿模證明。需有可驗證的保守剔除與原高模候選精查，並另測漏報、耗時及記憶體，才可評估是否採用。
